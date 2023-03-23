@@ -4,13 +4,14 @@ class CuentaBancaria
 	private String numCuenta;
 	private String nomTitular;
 	private double saldo;
-		
+	private int tipoIntereses;	
 	//Metodos
 	
-	public CuentaBancaria(String numCuenta,String nomTitular,double saldo)
+	public CuentaBancaria(String numCuenta,String nomTitular,int tipoIntereses,double saldo)
 	{
 		this.numCuenta = numCuenta;
 		this.nomTitular = nomTitular;
+		this.tipoInstereses = tipoIntereses;
 		ingreso(saldo);
 			}
 	
@@ -31,12 +32,13 @@ class CuentaBancaria
 	}
 	
 	////////////////////////////////////////////////////////////////////////////
-	
 		
 	////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////////
 	
 	//Metodos Get
+	////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////
 	public String getNumCuenta()
 	{
 		return numCuenta;
